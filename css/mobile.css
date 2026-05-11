@@ -1,0 +1,72 @@
+@media (max-width: 700px) {
+
+    /* Thanh điều hướng */
+
+    .navigation-bar {
+        background-color: rgb(240, 240, 240);
+        display: flex;
+        text-align: left;
+        justify-content: left; 
+    }
+
+    .navigation-bar-button {
+        display: block;
+        width: 100%;
+    }
+
+    .navigation-bar-button a {
+        border-left: none;
+        border-right: none;
+    }
+
+    /* 2. Nội dung */
+
+    .box-content { 
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    /* 3. Thông tin chi tiết về sinh viên */
+
+    .full-information {
+        margin: 40px 15% 0 15%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    /* 4. Chứng chỉ - Giải thưởng */
+
+    .certificate-result-list {
+        grid-template-columns: 1fr; 
+        gap: 30px;
+    }
+
+    .certificate-result {
+        flex-direction: column; 
+    }
+
+    .certificate-result-img img {
+        width: 100% !important; 
+        height: auto;
+    }
+
+    .certificate-result:not(:last-child) {
+        border-bottom: solid 1px rgb(255, 140, 0);
+    }
+
+    /* 5. Dự án */
+
+    .projects-result {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    /* 6 - Credits */
+
+    .credit_socials a p {
+        display: none;
+    }
+
+}

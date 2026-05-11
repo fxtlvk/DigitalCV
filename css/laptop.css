@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: open_sansregular;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hidden {
+    display: none;
+}
+
+.blue-button-icon-nav::before {
+    color: #199cdbff;
+    font-size: 20px;
+}
+
+.blue-button-icon-social::before {
+    color: #199cdbff;
+    font-size: 20px;
+}
+
+.blue-button-icon-credit::before {
+    color: #199cdbff;
+    font-size: 30px;
+}
+
+.blue-button-icon-hobby::before {
+    color: #199cdbff;
+    font-size: 40px;
+}
+
+.full-information-main-icon::before {
+    font-size: 50px;
+    color: rgb(200, 200, 200)
+}
+
+/* 1. Thông tin */
+
+.main-name {
+    text-align: center;
+    background-color: beige;
+    width: 100%;
+}
+
+.main-name-main {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+
+/* Thanh điều hướng */
+
+.navigation-bar {
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    text-align: center;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.navigation-bar-button {
+    display: flex;
+}
+
+.navigation-bar-button a {
+    text-decoration: none;
+    color: #6c757d;
+    display: flex;
+    align-items: center;
+    padding: 15px 30px 15px 30px;
+    gap: 10px;
+    border-left: solid 1px rgb(211, 211, 211);
+    border-right: solid 1px rgb(210, 210, 210);
+}
+
+.navigation-bar-button a:hover {
+    background-color: rgb(220, 220, 220);
+}
+
+/* 2. Nội dung */
+
+.box-content { 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+.box-content-goal {
+    background-color: #f5f5f5ff;
+    padding: 100px 50px 100px 50px;
+}
+
+.box-content-personal-info {
+    background-color: #f0f0f0ff;
+    padding: 100px 50px 100px 50px;
+}
+
+.box-content-personal-info p {
+    display: inline;
+}
+
+.box-content-personal-info-links a {
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.box-content-personal-info-links a:hover {
+    background-color: rgb(220, 220, 220);
+}
+
+/* 3. Thông tin chi tiết về sinh viên */
+
+.full-information {
+    margin: 40px 15% 0 15%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+    align-items: start;
+}
+
+.full-information-main-box {
+    border: solid rgb(200, 200, 200) 1px;
+    padding: 60px 20px 60px 20px;
+}
+
+.fitag-view-more-1, .fitag-view-more-2, .fitag-view-more-3 {
+    cursor: pointer;
+    background-color: rgb(255, 255, 200);
+    color: black;
+    text-align: center;
+    padding: 5px;
+    margin: 0 60% 0 0;
+    border-radius: 10px;
+    opacity: 0;
+}
+
+.fitag-view-more-4, .fitag-view-more-5, .fitag-view-more-6 {
+    cursor: pointer;
+    background-color: rgb(255, 255, 200);
+    color: black;
+    text-align: center;
+    padding: 5px;
+    margin: 0 60% 0 0;
+    border-radius: 10px;
+    opacity: 0;
+}
+
+
+
+.full-information-main-box:hover {
+    .fitag-view-more-1, .fitag-view-more-2, .fitag-view-more-3 {
+        opacity: 100;
+    };
+    .fitag-view-more-4, .fitag-view-more-5, .fitag-view-more-6 {
+        opacity: 100;
+    }
+    .fitag-view-more-1:hover, .fitag-view-more-2:hover, .fitag-view-more-3:hover {
+        background-color: rgb(255, 227, 155);    
+    };
+
+    .fitag-view-more-4:hover, .fitag-view-more-5:hover, .fitag-view-more-6:hover {
+        background-color: rgb(255, 227, 155);    
+    };
+    border: solid rgb(200, 200, 200) 1px;
+    padding: 60px 20px 60px 20px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.full-information-main-box ul {
+    padding: 20px;
+}
+
+.full-information-main-box ul li::marker {
+    color:rgb(0, 150, 255);
+    font-size: 20px;
+}
+
+.full-information-tag {
+    background-color: rgb(0, 150, 255);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+.full-information-hobby-main-icon {
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Thanh này được sử dụng cho mức độ trình độ ở trang "Ngôn ngữ" và "Kỹ năng" */
+
+.main-bar {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.bar {
+    width: 50px; 
+    height: 4px;
+    background-color: #f0f0f0;
+}
+
+.bar.active {
+    background-color: #3498db;
+}
+
+/* 4. Chứng chỉ - Giải thưởng */
+
+.certificate-box {
+    background-color: rgb(240, 240, 240);
+    padding: 20px 15% 20px 15%;
+    margin: 40px 0 40px 0;
+}
+
+.certificate-main-box {
+    padding: 20px 0 20px 0;
+}
+
+.certificate-result-list {
+    background-color: rgb(240, 240, 240);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 30px;
+}
+
+/* Các chứng chỉ */
+
+.certificate-result {
+    display: flex;
+    gap: 15px;
+}
+
+
+/* 5 - Dự án */
+
+.projects {
+    margin: 40px 15% 40px 15%;
+}
+
+.projects-result {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+}
+
+/* Dự án ND */
+
+.projects-result-main-box {
+    border: rgb(240, 240, 240) solid 1px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.projects-result-content {
+    padding: 10px;
+}
+
+
+/* 6 - Credit */
+
+.credit {
+    background-color: rgb(240, 240, 240);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.credit_socials {
+    display: flex;
+    gap: 40px;
+}
+
+.credit_socials a {
+    text-decoration: none;
+    color: #6c757d;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
